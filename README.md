@@ -9,7 +9,6 @@ Also the statistics are exportend into **PDF**,using **ITEXT**,and for not slowi
 
 The **HTML** mail format is this:
 
-{::nomarkdown}
 
 <!--
 
@@ -41,8 +40,6 @@ The **HTML** mail format is this:
 </html>
 
 -->
-
-{:/}
 
 Question marks are used in the application for giving relevant information to each student.
 
