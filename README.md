@@ -8,6 +8,7 @@ For parsing the XML file,**DOM-parser** is used.
 Also the statistics are exportend into **PDF**,using **ITEXT**,and for not slowing down the application this task + (**email sending**) is runned on another process(thread).
 
 The **HTML** mail format can be found in src -> main ->resources ->email ->html.txt.
+Click on the **Wiki** page if you want to see how this application looks like.
 
 ## Creating database
 
