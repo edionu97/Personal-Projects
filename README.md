@@ -12,7 +12,7 @@ The **HTML** mail format is this:
 <html>
     <head>
         <style>
-             h1{
+             hh1{
                 font-size:200%;
                 font-style:italic;
                 text-align:center;
@@ -21,7 +21,7 @@ The **HTML** mail format is this:
                font-size:150%;
                font-style:italic;
              }
-             h2{
+             hh2{
                 text-decoration:underline;
                 text-align:left;
                 font-size:150%;
@@ -29,9 +29,9 @@ The **HTML** mail format is this:
         </style>
     </head>
     <body>
-        <h1>Student information</h1>
+        <hh1>Student information</h1>
         <p><strong>?</strong>,this is an informative message,showing information about your lab marks,and lab updates.</p>
-        <h2> Message content </h2>
+        <hh2> Message content </h2>
         <p align="center" style="font-size:150%;font-style:italic;">?</p>
     </body>
 </html>
@@ -39,9 +39,9 @@ The **HTML** mail format is this:
 
 Question marks are used in the application for giving relevant information to each student.
 
-### Creating database
+## Creating database
 
-**Creating functions**
+### Creating functions
  This functions are used in data pagination:
 
  CREATE FUNCTION [dbo].[paginateNota](@pageNumber INT,@pageElements INT) RETURNS @table TABLE (
@@ -100,7 +100,7 @@ Question marks are used in the application for giving relevant information to ea
   
  END
 
-**Creating tables**
+### Creating tables
 
  CREATE TABLE Tema(
    idTema INT PRIMARY KEY,
