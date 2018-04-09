@@ -42,9 +42,9 @@ Question marks are used in the application for giving relevant information to ea
 ### Creating database
 
 **Creating functions**
-This functions are used in data pagination:
+ This functions are used in data pagination:
 
-CREATE FUNCTION [dbo].[paginateNota](@pageNumber INT,@pageElements INT) RETURNS @table TABLE (
+ CREATE FUNCTION [dbo].[paginateNota](@pageNumber INT,@pageElements INT) RETURNS @table TABLE (
 
 		idStudent INT,idTema INT,observations VARCHAR (500),nota FLOAT
 
@@ -60,10 +60,10 @@ CREATE FUNCTION [dbo].[paginateNota](@pageNumber INT,@pageElements INT) RETURNS 
 	) a WHERE a.rowNum >= @start AND a.rowNum <= @end
 
 	RETURN;
-END
+ END
 
 
-CREATE FUNCTION [dbo].[paginateStudents](@pageNumber INT,@pageElements INT) RETURNS @table TABLE (
+ CREATE FUNCTION [dbo].[paginateStudents](@pageNumber INT,@pageElements INT) RETURNS @table TABLE (
 
 		idStudent INT,nume VARCHAR(500),email VARCHAR(500),cadruDidactic VARCHAR(500),grupa INT
 
@@ -79,9 +79,9 @@ CREATE FUNCTION [dbo].[paginateStudents](@pageNumber INT,@pageElements INT) RETU
 	) a WHERE a.rowNum >= @start AND a.rowNum <= @end
 
 	RETURN;
-END
+ END
 
-CREATE FUNCTION [dbo].[paginateStudents](@pageNumber INT,@pageElements INT) RETURNS @table TABLE (
+ CREATE FUNCTION [dbo].[paginateStudents](@pageNumber INT,@pageElements INT) RETURNS @table TABLE (
 
 		idStudent INT,nume VARCHAR(500),email VARCHAR(500),cadruDidactic VARCHAR(500),grupa INT
 
@@ -98,33 +98,33 @@ CREATE FUNCTION [dbo].[paginateStudents](@pageNumber INT,@pageElements INT) RETU
 
 	RETURN;
   
-END
+ END
 
 **Creating tables**
 
-CREATE TABLE Tema(
-  idTema INT PRIMARY KEY,
-  deadline INT NOT NULL,
-  cerinta VARCHAR(500)
-)
+ CREATE TABLE Tema(
+   idTema INT PRIMARY KEY,
+   deadline INT NOT NULL,
+   cerinta VARCHAR(500)
+ )
 
 
-CREATE TABLE Student(
+ CREATE TABLE Student(
     idStudent INT PRIMARY KEY,
     nume VARCHAR(500),
     email VARCHAR(500),
     cadruDidactic VARCHAR(500),
     grupa INT
-)
+ )
 
 
-CREATE TABLE Nota(
-  idStudent INT REFERENCES Student(idStudent),
-  idTema INT REFERENCES Tema(idTema),
-  PRIMARY KEY(idStudent,idTema),
-  observations VARCHAR(500),
-  nota FLOAT
-)
+ CREATE TABLE Nota(
+   idStudent INT REFERENCES Student(idStudent),
+   idTema INT REFERENCES Tema(idTema),
+   PRIMARY KEY(idStudent,idTema),
+   observations VARCHAR(500),
+   nota FLOAT
+ )
 
 
 
