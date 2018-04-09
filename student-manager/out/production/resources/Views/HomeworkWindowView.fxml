@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="User.FXML.Controlers.HomeworkWindowViewController">
+   <children>
+      <BorderPane id="borderPaneBack" layoutX="300.0" layoutY="164.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-7.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <AnchorPane id="lableAnchorPane" prefHeight="105.0" prefWidth="798.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label id="homeworkLable" fx:id="homeworkTitleWindow" alignment="CENTER" layoutY="11.0" prefHeight="90.0" prefWidth="798.0" text="Homework information" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="6.0">
+                     <padding>
+                        <Insets bottom="1.0" />
+                     </padding>
+                  </Label>
+                  <StackPane layoutY="2.0" prefHeight="82.0" prefWidth="94.0" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="704.0" AnchorPane.topAnchor="6.0" />
+                  <StackPane layoutX="685.0" layoutY="-1.0" prefHeight="102.0" prefWidth="101.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="697.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="6.0" />
+               </children>
+               <BorderPane.margin>
+                  <Insets right="-10.0" />
+               </BorderPane.margin>
+            </AnchorPane>
+         </top>
+         <left>
+            <AnchorPane id="tableAnchorPane" prefHeight="300.0" prefWidth="257.0" BorderPane.alignment="CENTER">
+               <children>
+                  <TableView id="homeworkTable" fx:id="tableViewHomeworks" layoutX="10.0" layoutY="23.0" prefHeight="434.0" prefWidth="238.0" AnchorPane.bottomAnchor="23.0" AnchorPane.leftAnchor="9.0" AnchorPane.rightAnchor="9.0" AnchorPane.topAnchor="29.0">
+                    <columns>
+                      <TableColumn id="tableColumnId" fx:id="tableColumnId" prefWidth="60.0" resizable="false" text="ID" />
+                        <TableColumn id="tableColumnDeadline" fx:id="tableColumnDeadline" prefWidth="87.0" resizable="false" text="Deadline" />
+                      <TableColumn id="tableColumnReq" fx:id="tableColumnReq" editable="false" minWidth="0.0" prefWidth="91.0" resizable="false" sortable="false" text="Demand" />
+                    </columns>
+                     <padding>
+                        <Insets bottom="1.0" left="1.0" right="1.0" />
+                     </padding>
+                  </TableView>
+                  <Label id="lableShowing" fx:id="lableShow" layoutX="16.0" layoutY="378.0" prefHeight="17.0" prefWidth="230.0" text="Label" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="9.0" AnchorPane.rightAnchor="9.0" />
+                  <TextField id="homeworkSearchField" fx:id="textFieldSearchHomework" layoutX="25.0" layoutY="1.0" prefHeight="26.0" prefWidth="184.0" AnchorPane.leftAnchor="13.0" AnchorPane.rightAnchor="13.0" AnchorPane.topAnchor="2.0" />
+               </children>
+               <BorderPane.margin>
+                  <Insets bottom="80.0" left="5.0" right="5.0" top="20.0" />
+               </BorderPane.margin>
+            </AnchorPane>
+         </left>
+         <center>
+            <AnchorPane prefHeight="300.0" prefWidth="316.0" BorderPane.alignment="CENTER">
+               <children>
+                  <GridPane id="gridPane" hgap="5.0" layoutY="67.0" prefHeight="249.0" prefWidth="319.0" vgap="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="200.0" minWidth="10.0" prefWidth="141.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="200.0" minWidth="0.0" prefWidth="157.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label id="deadLineLable" fx:id="lableId" alignment="CENTER" prefHeight="51.0" prefWidth="150.0" text="ID" />
+                        <Label id="cerintaLable" fx:id="lableDeadline" alignment="CENTER" prefHeight="51.0" prefWidth="157.0" text="Deadline" GridPane.rowIndex="1" />
+                        <Label id="idLable" fx:id="lableDemand" alignment="CENTER" prefHeight="51.0" prefWidth="159.0" text="Demand" GridPane.rowIndex="2" />
+                        <TextField id="homeworkTextField" fx:id="textFieldDemand" alignment="CENTER" prefHeight="44.0" prefWidth="155.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <TextField id="homeworkTextField" fx:id="textFieldDeadline" alignment="CENTER" prefHeight="44.0" prefWidth="162.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <TextField id="homeworkTextField" fx:id="textFieldId" alignment="CENTER" prefHeight="44.0" prefWidth="162.0" GridPane.columnIndex="1" />
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </GridPane>
+                  <TextArea id="textArea" fx:id="textArea" editable="false" layoutX="64.0" layoutY="318.0" prefHeight="58.0" prefWidth="335.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0">
+                     <padding>
+                        <Insets left="10.0" right="10.0" />
+                     </padding>
+                  </TextArea>
+                  <Button id="homeworkPrevPage" fx:id="prevButton" layoutX="18.0" layoutY="28.0" mnemonicParsing="false" onAction="#handlePrevEvent" prefHeight="25.0" prefWidth="31.0" text="press for prev page" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="322.0">
+                     <tooltip>
+                        <Tooltip text="Press for prev page" />
+                     </tooltip>
+                  </Button>
+                  <Button id="homeworkNextPage" fx:id="nextButton" layoutX="76.0" layoutY="48.0" mnemonicParsing="false" onAction="#handleNextEvent" prefHeight="26.0" prefWidth="31.0" text="Button" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="322.0">
+                     <tooltip>
+                        <Tooltip text="Press for next page" />
+                     </tooltip>
+                  </Button>
+                  <Label id="lablePage" fx:id="lablePage" layoutX="65.0" layoutY="326.0" prefHeight="17.0" prefWidth="164.0" text="Label" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0" />
+                  <AnchorPane fx:id="anchorPanePage" layoutX="68.0" layoutY="39.0" prefHeight="34.0" prefWidth="325.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="10.0">
+                     <children>
+                        <Label fx:id="showingLabel" layoutX="11.0" layoutY="9.0" prefHeight="24.0" prefWidth="118.0" text="Showing:" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="70.0" />
+                        <ComboBox fx:id="pageCombo" layoutX="113.0" layoutY="5.0" prefHeight="25.0" prefWidth="56.0" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="14.0" />
+                     </children></AnchorPane>
+               </children>
+               <BorderPane.margin>
+                  <Insets bottom="80.0" left="5.0" right="5.0" top="20.0" />
+               </BorderPane.margin>
+            </AnchorPane>
+         </center>
+         <right>
+            <AnchorPane id="buttonAnchorPane" prefHeight="300.0" prefWidth="178.0" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets bottom="80.0" left="5.0" right="5.0" top="20.0" />
+               </BorderPane.margin>
+               <children>
+                  <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="192.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                     <children>
+                        <Button id="homeworkAddButton" fx:id="buttonAdd" layoutX="64.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleAddEvent" text="Add" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="60.0" AnchorPane.topAnchor="14.0">
+                           <tooltip>
+                              <Tooltip text="Press to add a homework into database">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Tooltip>
+                           </tooltip></Button>
+                        <Button id="homeworkDeleteButton" fx:id="homeworkDeleteButton" layoutX="64.0" layoutY="88.0" mnemonicParsing="false" onAction="#handleDeleteEvent" text="Delete" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="60.0" AnchorPane.topAnchor="120.0">
+                           <tooltip>
+                              <Tooltip text="Select a homework and press to remove it">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Tooltip>
+                           </tooltip></Button>
+                        <Button id="homeworkUpdateButton" fx:id="buttonEdit" layoutX="64.0" layoutY="174.0" mnemonicParsing="false" onAction="#handleEditEvent" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="60.0" AnchorPane.topAnchor="226.0">
+                           <tooltip>
+                              <Tooltip text="Select a homework and press to modify it's deadline">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Tooltip>
+                           </tooltip></Button>
+                        <Button id="homeworkClearButton" fx:id="homeworkClearButton" layoutX="64.0" layoutY="265.0" mnemonicParsing="false" onAction="#handleClearEvent" text="Clear" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="60.0" AnchorPane.topAnchor="336.0">
+                           <tooltip>
+                              <Tooltip text="Press to restart">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Tooltip>
+                           </tooltip></Button>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </right>
+      </BorderPane>
+   </children>
+</AnchorPane>

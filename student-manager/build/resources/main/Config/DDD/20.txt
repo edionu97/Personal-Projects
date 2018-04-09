@@ -1,0 +1,3 @@
+Adaugare nota,1,10.0,14,13,Perfecta(no penality)
+Adaugare nota,2,10.0,14,13,Extraoridnara(no penality)
+Adaugare nota,3,10.0,14,13,Asa si asa(no penality)

@@ -1,0 +1,1 @@
+Adaugare nota,1,10.0,14,13,Excelent(no penality)

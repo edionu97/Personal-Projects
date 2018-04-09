@@ -1,0 +1,8 @@
+Adaugare nota,2,10.0,14,13,Perfecta(no penality)
+Adaugare nota,18,10.0,14,12,Best(no penality)
+Adaugare nota,454521,1.0,10,12,Penalizare depasire deadline Perfecta
+Adaugare nota,19,10.0,14,12,dasd(no penality)
+Adaugare nota,1,10.0,14,12,(no penality)
+Adaugare nota,3,10.0,14,12,dad(no penality)
+Adaugare nota,14,10.0,14,12,Perfecta(no penality)
+Adaugare nota,646,1.0,4,13,Penalizare depasire deadline fefsf

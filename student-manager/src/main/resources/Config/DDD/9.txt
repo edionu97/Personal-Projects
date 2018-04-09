@@ -1,0 +1,9 @@
+Adaugare nota,454521,1.0,10,12,Penalizare depasire deadline fvjsdoifvdinfoivfiofsh sihfvhdfsdhfish ihsdouvfhusdnfis
+Adaugare nota,4545,10.0,14,12,(no penality)
+Adaugare nota,1441,10.0,14,12,(no penality)
+Adaugare nota,8,10.0,14,13,Perfecta(no penality)
+Adaugare nota,421,10.0,14,13,Super(no penality)
+Adaugare nota,7,1.0,1,13,Penalizare depasire deadline das
+Adaugare nota,8,10.0,14,13,dad(no penality)
+Adaugare nota,4555,1.0,10,13,Penalizare depasire deadline Perfercta
+Adaugare nota,648,10.0,14,13,(no penality)

@@ -1,0 +1,1800 @@
+.customStyle1{
+    -fx-background-color: whitesmoke;
+
+    -fx-border-color: black black transparent;
+
+    -fx-font-style: italic;
+
+    -fx-background-image: url("../Images/list.png");
+
+    -fx-background-size: contain;
+    -fx-background-insets: 1 1 1 1;
+    -fx-alignment: center-right;
+    -fx-background-repeat: no-repeat;
+
+}
+
+
+.customStyle2{
+
+    -fx-background-color: linear-gradient(gainsboro,whitesmoke);
+    -fx-border-color: black;
+
+    -fx-max-height: 27;
+    -fx-min-height: 25;
+    -fx-max-width: 133;
+    -fx-min-width: 133;
+
+    -fx-background-image: url("../Images/plus.png");
+    -fx-background-size: contain;
+    -fx-background-repeat: no-repeat;
+
+    -fx-font-weight: bold;
+
+    -fx-border-width: 1;
+    -fx-font-style: italic;
+}
+
+.customStyle1 .text{
+    -fx-effect: dropshadow( three-pass-box , gray , 5, 0.0 , 0 , 1 );
+    -fx-text-alignment: center;
+    -fx-font-weight: bold;
+    -fx-font-size: 12;
+}
+
+.customStyle2 .text{
+    -fx-effect: dropshadow( three-pass-box , gray , 5, 0.0 , 0 , 1 );
+    -fx-text-alignment: left;
+}
+
+#pageLabel{
+    -fx-effect: dropshadow( two-pass-box, rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+    -fx-font-weight: bold;
+    -fx-font-style: italic;
+}
+
+#nextButton{
+    -fx-font-weight: bold;
+    -fx-font-style: italic;
+}
+
+#prevButton{
+    -fx-font-weight: bold;
+    -fx-font-style: italic;
+}
+
+#label{
+    -fx-border-radius: 25;
+    -fx-border-color: linear-gradient(gainsboro,grey);
+    -fx-font-style: oblique;
+    -fx-font-weight: bold;
+}
+
+#studentWindowTitle{
+    -fx-font-size: 40;
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+    -fx-font-style: italic;
+}
+
+#table{
+    -fx-border-color: white;
+    -fx-focus-color: white;
+}
+
+#table .column-header-background .filler{
+    -fx-background-color: white;
+}
+
+#table .column-header{
+    -fx-border-color: transparent transparent lightgray transparent;
+    -fx-border-width: 2;
+}
+
+#table .thumb{
+    -fx-background-color: radial-gradient(radius 180%,black,whitesmoke);
+}
+
+#table .scroll-bar{
+    -fx-background-color: whitesmoke;
+}
+
+#table .column-header:hover{
+    -fx-border-radius: 0;
+}
+
+#table .table-row-cell:selected .text {
+
+    -fx-font-style: italic;
+    -fx-fill: mediumblue;
+}
+
+#table .table-row-cell:selected {
+
+    -fx-background-color: mediumblue;
+}
+
+#customCell{
+    -fx-background-color: whitesmoke;
+    -fx-text-fill: black;
+    -fx-font-weight: normal;
+    -fx-font-size: 17;
+    -fx-focused-color : white;
+}
+
+#actionCell{
+    -fx-alignment: center;
+    -fx-background-color: whitesmoke;
+    -fx-text-fill: black;
+    -fx-font-weight: normal;
+    -fx-font-size: 15;
+    -fx-focused-color : white;
+}
+
+
+#actionCell:hover{
+    -fx-border-color: transparent;
+}
+
+#actionCell:odd{
+    -fx-background-color: linear-gradient(white 0, lightgrey 100);
+}
+
+#customCell:odd{
+    -fx-background-color: linear-gradient(white 0, lightgrey 100);
+}
+
+
+#deleteButton{
+    -fx-background-color: #ff5a47;
+    -fx-font-style: italic;
+    -fx-font-weight: bold;
+    -fx-text-fill: black;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 4 );
+}
+
+#deleteButton:hover{
+    -fx-background-color: radial-gradient(radius 180%,#ff5c50,whitesmoke);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 ,5 );
+}
+
+#deleteButton:pressed{
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 2 );
+}
+
+#editButton{
+    -fx-background-color: #03a2ff;
+    -fx-text-fill: black;
+    -fx-font-style: italic;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 ,4 );
+}
+
+#editButton:hover{
+    -fx-background-color: radial-gradient(radius 180%,dodgerblue,whitesmoke);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 ,5 );
+}
+
+#editButton:pressed{
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 2 );
+}
+
+#fontLabel{
+    -fx-background-color: radial-gradient(radius 100%,slategray,lightslategray);
+    -fx-border-width: 3;
+    -fx-border-color: transparent;
+}
+
+#background{
+    -fx-background-color:  radial-gradient(radius 180%,slategray,black);
+}
+
+
+.comboBox{
+   -fx-background-color: antiquewhite;
+}
+
+.comboBox .cell{
+    -fx-font-style: italic;
+    -fx-font-weight: bold;
+}
+
+#addLable{
+    -fx-font-style: italic;
+    -fx-font-size: 40;
+    -fx-font-weight: 900;
+    -fx-text-fill: linear-gradient(black,grey);
+    -fx-border-color: transparent transparent black transparent;
+    -fx-border-width: 3;
+}
+
+#fieldLable{
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-border-color: black;
+    -fx-border-width: 2;
+    -fx-alignment: center-right;
+    -fx-text-fill: white;
+    -fx-background-color:gray;
+    -fx-font-size: 22;
+    -fx-font-weight: bold;
+    -fx-font-style: italic;
+}
+
+#searchField{
+
+    -fx-border-radius: 0;
+    -fx-border-color: black black transparent;
+    -fx-min-height: 26;
+    -fx-max-height: 26;
+
+    -fx-prompt-text-fill: black;
+
+    -fx-font-size : 12;
+    -fx-font-weight: bold;
+    -fx-font-style: italic;
+    -fx-alignment: center;
+
+    -fx-background-color: linear-gradient(gainsboro,whitesmoke);
+
+
+    -fx-background-image: url("../Images/search.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 25px 25px;
+    -fx-background-position: left;
+}
+
+#tableAnchorPaneMain{
+    -fx-background-color: radial-gradient(radius 180%,whitesmoke,whitesmoke);
+    -fx-border-color: black;
+    -fx-border-width: 2;
+    -fx-border-radius: 25;
+    -fx-background-radius: 25;
+}
+
+#textField{
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-background-color: whitesmoke;
+    -fx-border-color: black;
+    -fx-border-width: 2;
+    -fx-font-style: oblique;
+    -fx-font-size: 15;
+    -fx-font-weight: bold;
+    -fx-focus-color:transparent;
+}
+
+#addButton1{
+    -fx-background-color:linear-gradient(green,darkgreen,grey);
+    -fx-text-fill: white;
+    -fx-font-size: 17;
+    -fx-font-weight: bold;
+    -fx-border-color: darkgreen;
+    -fx-font-style: italic;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 5 );
+}
+
+#addButton1:hover{
+    -fx-background-color:  linear-gradient(darkgreen,green);
+}
+
+#addButton1:pressed{
+    -fx-padding: 6 5 4 1;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+
+#cancelButton{
+    -fx-background-color:linear-gradient(darkorange,darkorange,darkorange);
+    -fx-text-fill: white;
+    -fx-font-size: 17;
+    -fx-font-weight: bold;
+    -fx-border-color: darkorange;
+    -fx-font-style: italic;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 5 );
+}
+
+#cancelButton:hover{
+    -fx-background-color:  linear-gradient(darkorange,orangered);
+}
+
+#cancelButton:pressed{
+    -fx-padding: 6 5 4 1;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 0 );
+}
+
+.line{
+    -fx-border-width: 2;
+}
+
+#imageEdit{
+}
+
+#anchorPaneEdit{
+    -fx-background-color: radial-gradient(radius 180%,whitesmoke,darkgrey);
+    -fx-border-width: 1;
+    -fx-border-radius: 25;
+}
+
+#editLabel{
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+    -fx-font-style: italic;
+    -fx-font-size: 30;
+}
+
+#borderPaneEdit{
+    -fx-background-color: radial-gradient(radius 180%,whitesmoke,darkgrey);
+}
+
+#labelEdit{
+    -fx-border-radius: 25;
+    -fx-border-width: 2;
+    -fx-border-color:black;
+    -fx-font-size: 25;
+    -fx-font-style: oblique;
+    -fx-font-weight: bold;
+    -fx-text-fill: black;
+}
+
+#textFieldEdit{
+    -fx-border-color: black;
+    -fx-border-width: 2;
+    -fx-border-radius: 25;
+    -fx-border-insets: 1 1 1 1;
+    -fx-background-color: inherit;
+    -fx-background-radius: 25;
+    -fx-text-fill: black;
+    -fx-font-style: italic;
+    -fx-font-weight: 900;
+    -fx-font-size: 18;
+    -fx-alignment: center;
+}
+
+#buttonSaveEdit {
+    -fx-background-color: transparent;
+
+    -fx-background-image:  url("../Images/edit2.png");
+    -fx-background-size : 45px 45px;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-min-width: 60;
+    -fx-max-width: 60;
+    -fx-min-height: 60;
+    -fx-max-height: 60;
+    -fx-background-radius: 20;
+}
+
+#buttonSaveEdit:hover{
+    -fx-background-color: linear-gradient(darkgreen,whitesmoke);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 10 );
+}
+
+#buttonSaveEdit:pressed{
+    -fx-background-color: linear-gradient(green,whitesmoke);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 5 );
+}
+
+#buttonTrash{
+    -fx-background-color: transparent;
+    -fx-background-image:  url("../Images/bin.png");
+    -fx-min-width: 60;
+    -fx-max-width: 60;
+    -fx-min-height: 60;
+    -fx-max-height: 60;
+    -fx-background-radius: 20;
+    -fx-background-size: 47px 47px;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-content-display: graphic-only;
+
+}
+
+#buttonTrash:hover{
+    -fx-background-color: linear-gradient(darkred,whitesmoke);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 10 );
+}
+
+#buttonTrash:pressed{
+    -fx-background-color: linear-gradient(firebrick,whitesmoke);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 5 );
+}
+
+#buttonBack{
+    -fx-background-image: url("../Images/back.png");
+    -fx-background-size: cover;
+    -fx-content-display: graphic-only;
+    -fx-background-radius: 20;
+    -fx-min-width: 50;
+    -fx-max-width: 50;
+    -fx-min-height: 50;
+    -fx-max-height: 50;
+    -fx-background-color: transparent;
+}
+
+#buttonBack:hover{
+    -fx-background-image: url("../Images/arrows.png");
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 10 );
+}
+
+#buttonBack:pressed{
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 5 );
+}
+
+/*Homework*/
+
+#borderPaneBack{
+    -fx-background-color: radial-gradient(radius 380%,slategray,black);
+}
+
+#homeworkLable{
+    -fx-font-size: 40;
+    -fx-font-style: italic;
+    -fx-font-weight: bold;
+    -fx-text-fill: black;
+}
+
+#lableAnchorPane{
+    -fx-border-color: transparent;
+    -fx-background-color: radial-gradient(radius 100%,slategray,lightslategray);
+}
+
+#tableAnchorPane{
+    -fx-background-color: inherit;
+    -fx-border-radius: 25;
+    -fx-border-color: black;
+    -fx-background-radius: 25;
+    -fx-border-width: 2;
+}
+
+#gridPane{
+    -fx-border-color: black;
+    -fx-border-radius: 25;
+    -fx-border-width: 3;
+}
+
+#deadLineLable{
+    -fx-border-color: linear-gradient(white,antiquewhite,darkgray,whitesmoke);;
+    -fx-border-width: 1.5;
+    -fx-border-radius: 25;
+    -fx-font-style: italic;
+    -fx-text-fill: whitesmoke;
+    -fx-font-size: 25;
+    -fx-font-weight: bold;
+}
+
+#idLable{
+    -fx-border-color: linear-gradient(white,antiquewhite,darkgray,whitesmoke);;
+    -fx-border-width: 1.5;
+    -fx-border-radius: 25;
+    -fx-font-style: italic;
+    -fx-text-fill: whitesmoke;
+    -fx-font-size: 23;
+    -fx-font-weight: bold;
+}
+
+#cerintaLable{
+    -fx-border-color: linear-gradient(white,antiquewhite,darkgray,whitesmoke);
+    -fx-border-width: 1.5;
+    -fx-border-radius: 25;
+    -fx-font-style: italic;
+    -fx-text-fill: whitesmoke;
+    -fx-font-size: 25;
+    -fx-font-weight: bold;
+}
+
+#homeworkTextField{
+    -fx-border-color: linear-gradient(lightblue,blue,whitesmoke);
+    -fx-background-color: inherit;
+    -fx-border-width: 2;
+    -fx-border-radius: 25;
+    -fx-text-fill: whitesmoke;
+    -fx-font-weight: bold;
+    -fx-font-style: italic;
+    -fx-font-size: 18;
+}
+
+#buttonAnchorPane{
+    -fx-background-color: inherit;
+    -fx-background-radius: 25;
+    -fx-border-width: 2;
+    -fx-border-color: black;
+    -fx-border-radius: 25;
+}
+
+#homeworkAddButton{
+    -fx-content-display: graphic-only;
+
+    -fx-min-height: 70;
+    -fx-max-height: 70;
+    -fx-min-width: 70;
+    -fx-max-width: 70;
+
+    -fx-border-radius: 50;
+
+    -fx-background-radius: 50;
+    -fx-background-color: #00A7E1;
+
+    -fx-graphic: url("../Images/add.png");
+
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+
+    -fx-effect:dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 5 ) ;
+}
+
+#homeworkAddButton:hover{
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 10 );
+    -fx-background-color: radial-gradient(radius 180%,#00A7E1,steelblue);
+}
+
+#homeworkAddButton:pressed{
+    -fx-background-color: radial-gradient(radius 180%,#00A7E1,steelblue);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+    -fx-padding: 6 5 4 3;
+    -fx-background-insets: 6 5 4 3;
+}
+
+#homeworkDeleteButton{
+    -fx-content-display: graphic-only;
+
+    -fx-min-height: 70;
+    -fx-max-height: 70;
+    -fx-min-width: 70;
+    -fx-max-width: 70;
+
+    -fx-border-radius: 50;
+
+    -fx-background-radius: 50;
+
+    -fx-background-color: #801D15;
+
+    -fx-effect:dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 5 ) ;
+    -fx-graphic: url("../Images/delete.png");
+    -fx-background-size: contain;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+#homeworkDeleteButton:hover{
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 10 );
+    -fx-background-color: radial-gradient(radius 180%,#801D15,maroon);
+}
+
+#homeworkDeleteButton:pressed{
+    -fx-background-color:radial-gradient(radius 100%,#801D15,maroon);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+    -fx-padding: 6 5 4 3;
+    -fx-background-insets: 6 5 4 3;
+}
+
+#homeworkUpdateButton{
+
+    -fx-content-display: graphic-only;
+
+    -fx-min-height: 70;
+    -fx-max-height: 70;
+    -fx-min-width: 70;
+    -fx-max-width: 70;
+
+    -fx-border-radius: 50;
+
+    -fx-background-radius: 50;
+
+    -fx-effect:dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 5 ) ;
+    -fx-background-color: dodgerblue;
+
+    -fx-background-image: url("../Images/update.png");
+    -fx-background-size: 32px 32px;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+}
+
+#homeworkUpdateButton:hover{
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 10 );
+    -fx-background-color: linear-gradient(steelblue,dodgerblue);
+}
+
+#homeworkUpdateButton:pressed{
+    -fx-background-color: linear-gradient(steelblue,dodgerblue);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+    -fx-padding: 6 5 4 3;
+    -fx-background-insets: 6 5 4 3;
+}
+
+#homeworkClearButton{
+    -fx-content-display: graphic-only;
+
+    -fx-min-height: 70;
+    -fx-max-height: 70;
+    -fx-min-width: 70;
+    -fx-max-width: 70;
+
+    -fx-border-radius: 50;
+
+    -fx-background-radius: 50;
+
+    -fx-background-color: brown;
+
+    -fx-graphic: url("../Images/clear.png");
+    -fx-background-size: contain;
+    -fx-background-repeat: no-repeat;
+
+    -fx-effect:dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 5 ) ;
+}
+
+#homeworkClearButton:hover{
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 10 );
+    -fx-background-color: firebrick;
+}
+
+#homeworkClearButton:pressed{
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+    -fx-background-color: linear-gradient(firebrick,maroon);
+    -fx-padding: 6 5 4 3;
+    -fx-background-insets: 6 5 4 3;
+}
+
+
+#homeworkTable{
+    -fx-background-color: inherit;
+    -fx-background-radius: 25;
+    -fx-border-color: black;
+    -fx-border-width: 2;
+}
+
+
+#homeworkTable .column-header{
+    -fx-background-color:linear-gradient(bisque,whitesmoke);
+    -fx-border-color: transparent black black transparent;
+    -fx-border-width: 2;
+}
+
+#homeworkTable .scroll-bar{
+    -fx-background-color: gainsboro;
+}
+
+#homeworkTable .scroll-bar:horizontal .thumb{
+    -fx-background-color: linear-gradient(grey,whitesmoke);
+}
+
+
+#homeworkTable .table-row-cell:selected{
+    -fx-font-weight: bold;
+    -fx-border-width: 2;
+    -fx-border-color:black transparent black transparent;
+    -fx-font-size: 24;
+    -fx-cell-size: 44;
+}
+
+#tableColumnId{
+    -fx-text-fill: black;
+    -fx-font-size: 15;
+    -fx-font-style: italic;
+    -fx-alignment: center;
+}
+
+#tableColumnDeadline{
+    -fx-text-fill: black;
+    -fx-font-size: 15;
+    -fx-font-style: italic;
+    -fx-alignment: center;
+}
+
+#tableColumnReq{
+    -fx-text-fill: black;
+    -fx-font-size: 15;
+    -fx-font-style: italic;
+    -fx-alignment: center;
+}
+
+#tableColumnReq{
+    -fx-background-color: whitesmoke;
+    -fx-border-color: transparent transparent black transparent;
+}
+
+#tableColumnDeadline{
+    -fx-background-color: whitesmoke;
+    -fx-border-color: transparent transparent black transparent;
+}
+
+#tableColumnId{
+    -fx-background-color: whitesmoke;
+    -fx-border-color: transparent transparent black transparent;
+}
+
+#infoButton{
+    -fx-min-height:32;
+    -fx-max-height:32;
+    -fx-min-width:32;
+    -fx-max-width:32;
+    -fx-background-color: inherit;
+    -fx-background-image: url("../Images/info.png");
+    -fx-background-size:cover;
+    -fx-background-repeat: no-repeat;
+}
+
+#infoButton:hover{
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 5 );
+}
+
+#infoButton:pressed{
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+    -fx-padding: 4 3 2 1;
+    -fx-background-insets: 2 2 2 2;
+}
+
+#textArea {
+    -fx-border-color: black;
+    -fx-background-color: inherit;
+    -fx-font-weight: bold;
+    -fx-font-style: italic;
+    -fx-font-size: 15;
+    -fx-text-fill: whitesmoke;
+    -fx-border-width: 3;
+    -fx-border-radius: 15;
+    -fx-background-radius: 15;
+}
+
+#textArea .content{
+    -fx-background-color: radial-gradient(radius 380%,slategray,black);
+}
+
+#textArea .scroll-bar{
+    -fx-background-color: inherit;
+}
+
+#textArea .scroll-pane .content .text {
+    -fx-text-alignment: center;
+}
+
+#textArea .scroll-pane .corner{
+    -fx-background-color: transparent;
+}
+
+#textArea .scroll-pane{
+    -fx-background-color: transparent;
+}
+
+#textArea .scroll-bar .thumb{
+    -fx-background-color: black;
+}
+
+
+#textArea .scroll-bar .increment-button, #textArea .scroll-bar .decrement-button{
+    -fx-background-color: transparent;
+}
+
+#homeworkNextPage{
+    -fx-content-display: graphic-only;
+    -fx-background-color: inherit;
+    -fx-background-image: url("../Images/next.png");
+    -fx-background-size: contain;
+    -fx-background-repeat: no-repeat;
+    -fx-background-radius: 25;
+    -fx-max-height: 30;
+    -fx-min-height: 30;
+    -fx-max-width: 30;
+    -fx-min-width: 30;
+    -fx-border-color: black;
+    -fx-border-radius: 25;
+    -fx-border-width: 2;
+}
+
+#homeworkPrevPage{
+    -fx-content-display: graphic-only;
+    -fx-background-color: inherit;
+    -fx-background-image: url("../Images/prev.png");
+    -fx-background-size: contain;
+    -fx-background-repeat: no-repeat;
+    -fx-background-radius: 25;
+    -fx-max-height: 30;
+    -fx-min-height: 30;
+    -fx-max-width: 30;
+    -fx-min-width: 30;
+
+    -fx-border-color: black;
+    -fx-border-radius: 25;
+    -fx-border-width: 2;
+}
+
+#homeworkPrevPage:hover{
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 5 );
+    -fx-background-radius: 25;
+}
+
+#homeworkNextPage:hover{
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 5 );
+    -fx-background-radius: 25;
+}
+
+#homeworkPrevPage:pressed{
+     -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+    -fx-background-insets: 6 5 4 3;
+}
+
+#homeworkNextPage:pressed{
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+    -fx-background-insets: 6 5 4 3;
+}
+
+#lableShowing {
+    -fx-background-color: transparent;
+    -fx-alignment: center;
+    -fx-font-style: italic;
+    -fx-font-weight: bold;
+    -fx-font-size: 15;
+    -fx-text-fill: whitesmoke;
+}
+
+
+#homeworkSearchField{
+    -fx-background-color: transparent;
+    -fx-background-image: url("../Images/find.png");
+    -fx-background-size: contain;
+    -fx-background-repeat: no-repeat;
+    -fx-padding: 0 0 0 30;
+    -fx-font-weight: bold;
+    -fx-font-style: italic;
+    -fx-font-size: 15;
+    -fx-prompt-text-fill: whitesmoke;
+    -fx-text-fill: whitesmoke;
+    -fx-alignment: center;
+}
+
+#anchorPanePage{
+    -fx-border-radius: 25;
+    -fx-border-width: 2;
+    -fx-border-color: transparent;
+}
+
+#pageCombo{
+    -fx-background-radius: 25;
+    -fx-background-color: transparent;
+    -fx-border-color: black;
+    -fx-border-width: 2;
+    -fx-border-radius: 25;
+
+}
+
+#pageCombo .cell:selected{
+    -fx-font-weight: bold;
+    -fx-font-style: italic;
+    -fx-font-size: 13;
+    -fx-text-fill: whitesmoke;
+}
+
+#pageCombo .cell{
+    -fx-font-weight: bold;
+    -fx-font-style: italic;
+}
+
+#pageCombo .list-view{
+    -fx-border-color:  black;
+}
+
+#pageCombo .list-view:selected{
+    -fx-background-color: grey;
+}
+
+#pageCombo .list-cell:hover{
+    -fx-background-color: grey;
+}
+
+
+
+
+#showingLabel{
+    -fx-alignment: center;
+    -fx-font-style: italic;
+    -fx-font-weight: bold;
+    -fx-text-fill: whitesmoke;
+    -fx-font-size: 23;
+}
+
+
+#lablePage{
+    -fx-text-fill: whitesmoke;
+    -fx-border-color: black;
+    -fx-border-width: 2;
+    -fx-alignment:  center;
+    -fx-border-radius: 25;
+    -fx-font-weight: bold;
+    -fx-font-style: italic;
+    -fx-font-size: 14;
+}
+/*
+    Marks
+ */
+
+
+#markLable{
+    -fx-alignment: center;
+    -fx-font-size: 45;
+    -fx-font-style: italic;
+    -fx-font-weight: bold;
+    -fx-text-fill: black;
+}
+
+#markBorderPane{
+   -fx-background-color: radial-gradient(radius 380%,slategray,black);
+}
+
+#markLableAnchorPane{
+    -fx-background-color: radial-gradient(radius 100%,slategray,lightslategray);
+
+}
+
+#bottomAnchorPane{
+    -fx-border-color: black transparent transparent transparent;
+    -fx-border-width: 3;
+    -fx-border-radius: 25;
+}
+
+
+#markAdd{
+    -fx-content-display: graphic-only;
+    -fx-background-color: #00A7E1;
+    -fx-min-width: 50;
+    -fx-max-width: 50;
+    -fx-min-height: 50;
+    -fx-max-height: 50;
+    -fx-background-radius: 25;
+
+    -fx-background-image: url("../Images/add.png");
+    -fx-background-size: 25px 25px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 5 );
+}
+
+#markAdd:hover{
+    -fx-background-radius: 20;
+    -fx-background-color: #00a7f2;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 10 );
+}
+
+#markAdd:pressed{
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+    -fx-background-insets: 4 3 2 1;
+    -fx-background-color: #00a7f2;
+}
+
+#markEdit{
+    -fx-content-display: graphic-only;
+    -fx-background-color: radial-gradient(radius 150%,steelblue,dodgerblue);
+    -fx-min-width: 50;
+    -fx-max-width: 50;
+    -fx-min-height: 50;
+    -fx-max-height: 50;
+    -fx-background-radius: 25;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 5 );
+    -fx-background-image: url("../Images/edit.png");
+    -fx-background-size: 32px 32px;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+}
+
+#markEdit:hover{
+    -fx-background-radius: 20;
+    -fx-background-color: steelblue;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 10 );
+}
+
+#markEdit:pressed{
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+    -fx-background-insets: 4 3 2 1;
+    -fx-background-color:steelblue;
+}
+
+#homeworkNextButton{
+    -fx-content-display: graphic-only;
+    -fx-background-color: inherit;
+
+    -fx-min-width: 50;
+    -fx-max-width: 50;
+    -fx-min-height: 50;
+    -fx-max-height: 50;
+
+    -fx-background-image: url("../Images/homeNext.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+}
+
+#homeworkPrevButton{
+    -fx-content-display: graphic-only;
+    -fx-background-color: inherit;
+
+    -fx-min-width: 50;
+    -fx-max-width: 50;
+    -fx-min-height: 50;
+    -fx-max-height: 50;
+
+    -fx-background-image: url("../Images/homePrev.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+}
+
+#markTable{
+    -fx-background-color: inherit;
+    -fx-border-color: black;
+    -fx-border-width: 2;
+}
+
+#markTable .column-header{
+    -fx-background-color: linear-gradient(bisque,whitesmoke);
+    -fx-font-weight: bold;
+    -fx-font-style: italic;
+    -fx-font-size: 15;
+    -fx-border-color: transparent black black transparent;
+    -fx-border-width: 2;
+}
+
+#markTable .table-row-cell:selected{
+    -fx-font-weight: bold;
+    -fx-border-color: black transparent black transparent;
+    -fx-font-size: 15;
+    -fx-cell-size: 30;
+}
+
+#markTable .scroll-bar{
+    -fx-background-color: inherit;
+}
+
+#markTable .scroll-bar .thumb{
+    -fx-background-color:linear-gradient(black,gray);
+}
+
+#markTable .scroll-bar .increment-button{
+    -fx-background-color:inherit;
+}
+
+#markTable .scroll-bar .decrement-button{
+    -fx-background-color:inherit;
+}
+
+#markTable .column-header .label{
+    -fx-text-fill: black;
+}
+
+
+#homeSearchField{
+    -fx-border-color: black;
+    -fx-border-width: 2;
+    -fx-border-radius: 25;
+    -fx-background-radius: 25;
+    -fx-background-color: inherit;
+    -fx-background-image: url("../Images/homeSearch.png");
+    -fx-background-size: contain;
+    -fx-background-repeat: no-repeat;
+    -fx-padding: 0 0 0 25;
+    -fx-prompt-text-fill: whitesmoke;
+    -fx-text-fill: whitesmoke;
+    -fx-font-weight: bold;
+    -fx-alignment: center;
+    -fx-font-size: 15;
+}
+
+
+#markNameColumn{
+    -fx-background-color: whitesmoke;
+    -fx-border-color: black transparent transparent transparent;
+    -fx-font-weight: bold;
+    -fx-font-style: italic;
+    -fx-text-fill: black;
+    -fx-alignment: center;
+    -fx-font-size: 13;
+}
+
+#markGroupColumn{
+    -fx-background-color:whitesmoke;
+    -fx-border-color: black transparent transparent transparent;
+    -fx-font-weight: bold;
+    -fx-font-style: italic;
+    -fx-text-fill: black;
+    -fx-alignment: center;
+    -fx-font-size: 13;
+}
+
+#markIdColumn{
+    -fx-background-color: whitesmoke;
+    -fx-border-color: black transparent transparent transparent;
+    -fx-font-weight: bold;
+    -fx-font-style: italic;
+    -fx-text-fill: black;
+    -fx-alignment: center;
+    -fx-font-size: 13;
+}
+
+#markValueColumn{
+    -fx-background-color: whitesmoke;
+    -fx-border-color: black transparent transparent transparent;
+    -fx-font-weight: bold;
+    -fx-font-style: italic;
+    -fx-text-fill: black;
+    -fx-alignment: center;
+    -fx-font-size: 13;
+}
+
+#markDescriptionColumn{
+    -fx-background-color: whitesmoke;
+    -fx-border-color: black transparent transparent transparent;
+    -fx-font-weight: bold;
+    -fx-font-style: italic;
+    -fx-text-fill: black;
+    -fx-alignment: center;
+    -fx-font-size: 13;
+}
+
+#marksAddAnchorPane{
+    -fx-background-color:transparent;
+}
+
+#studentListView{
+    -fx-background-color: inherit;
+    -fx-text-fill: whitesmoke;
+}
+
+
+
+#temeListView{
+    -fx-background-color: inherit;
+    -fx-background-radius:10;
+}
+
+#listViewStudentsAnchorPane{
+    -fx-border-color: black;
+    -fx-border-radius: 25;
+    -fx-border-width: 3;
+}
+
+#listViewTemeAnchorPane{
+    -fx-border-color: black;
+    -fx-border-radius: 25;
+    -fx-border-width: 3;
+}
+
+#notaLable{
+    -fx-text-fill: whitesmoke;
+    -fx-border-color: black;
+    -fx-border-radius: 25;
+    -fx-alignment: center;
+    -fx-font-size: 20;
+    -fx-border-width: 3;
+    -fx-font-style: italic;
+    -fx-font-weight: bold;
+}
+
+#descriptionLable{
+    -fx-text-fill: whitesmoke;
+    -fx-border-color: black;
+    -fx-border-radius: 25;
+    -fx-alignment: center;
+    -fx-font-size: 20;
+    -fx-border-width: 3;
+    -fx-font-style: italic;
+    -fx-font-weight: bold;
+}
+
+#notaTextField{
+    -fx-background-color: inherit;
+    -fx-border-color: black;
+    -fx-border-width:3;
+    -fx-font-style: italic;
+    -fx-font-size: 15;
+    -fx-font-weight: bold;
+    -fx-border-radius: 25;
+    -fx-alignment: center;
+    -fx-text-fill: whitesmoke;
+}
+
+#descriereTextField{
+    -fx-background-color: inherit;
+    -fx-border-color: black;
+    -fx-border-width:3;
+    -fx-font-style: italic;
+    -fx-font-size: 15;
+    -fx-font-weight: bold;
+    -fx-border-radius: 25;
+    -fx-alignment: center;
+    -fx-text-fill: whitesmoke;
+}
+
+#listViewTitles{
+    -fx-alignment: center;
+    -fx-font-size: 18;
+    -fx-font-weight: bold;
+    -fx-font-style: italic;
+    -fx-text-fill: black;
+}
+
+#addWindowTitle{
+    -fx-font-style: italic;
+    -fx-alignment: top-center;
+    -fx-font-size: 40;
+    -fx-font-weight: bold;
+    -fx-text-fill: whitesmoke;
+}
+
+
+#buttonMarkCancel{
+    -fx-min-width: 50;
+    -fx-max-width: 50;
+    -fx-min-height: 50;
+    -fx-max-height: 50;
+
+    -fx-background-color: transparent;
+    -fx-background-radius: 25;
+
+    -fx-content-display: graphic-only;
+
+    -fx-background-image: url("../Images/cancel.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+
+}
+
+#buttonMarkCancel:hover{
+    -fx-background-color: linear-gradient(firebrick,whitesmoke);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 15 );
+
+    -fx-background-radius: 10;
+}
+
+#buttonMarkSave{
+
+    -fx-min-width: 50;
+    -fx-max-width: 50;
+    -fx-min-height: 50;
+    -fx-max-height: 50;
+
+    -fx-background-color: transparent;
+    -fx-background-radius: 25;
+
+    -fx-content-display: graphic-only;
+
+    -fx-background-image: url("../Images/check.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+}
+
+#buttonMarkSave:hover{
+    -fx-background-color: linear-gradient(green,whitesmoke);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 15 );
+
+    -fx-background-radius: 10;
+}
+
+
+#studentListView .scroll-bar:vertical{
+    -fx-background-color: transparent;
+}
+
+#studentListView .scroll-bar .track{
+    -fx-background-color: transparent;
+}
+
+#studentListView .scroll-bar:vertical .thumb{
+    -fx-background-color: linear-gradient(whitesmoke,grey);
+}
+
+#studentListView .scroll-bar:vertical .increment-button{
+    -fx-background-color: transparent;
+}
+
+#studentListView .scroll-bar:vertical .decrement-button{
+    -fx-background-color: transparent;
+}
+
+#studentListView .scroll-bar:horizontal{
+    -fx-background-color: transparent;
+}
+
+#studentListView .scroll-bar:horizontal .thumb{
+    -fx-background-color: linear-gradient(whitesmoke,grey);
+}
+
+#studentListView .scroll-bar:horizontal .increment-button{
+    -fx-background-color: transparent;
+}
+
+#studentListView .scroll-bar:horizontal .decrement-button{
+    -fx-background-color: transparent;
+}
+
+
+#studentListView .list-cell:selected{
+    -fx-border-color: black;
+    -fx-cell-size: 30;
+    -fx-border-width: 3;
+}
+
+#studentListView .list-cell{
+    -fx-background-color: inherit;
+    -fx-text-fill: whitesmoke;
+    -fx-font-weight: bold;
+    -fx-font-style: normal;
+}
+
+#studentListView:disabled{
+    -fx-opacity: 1.0;
+    -fx-font-style: oblique;
+    -fx-font-weight: bold;
+}
+
+
+#labelPageNumber{
+    -fx-alignment: center-left;
+    -fx-text-fill: whitesmoke;
+    -fx-font-style: italic;
+    -fx-font-weight: bold;
+    -fx-font-size: 20;
+}
+
+#buttonNextMarks{
+    -fx-content-display: graphic-only;
+    -fx-background-image: url("../Images/next.png");
+    -fx-background-size: contain;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: transparent;
+    -fx-rotate: 90;
+}
+
+#buttonPrevMark{
+    -fx-content-display: graphic-only;
+    -fx-background-image: url("../Images/next.png");
+    -fx-background-size: contain;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: transparent;
+    -fx-rotate: -90;
+}
+
+#markClearButton {
+    -fx-min-width: 50;
+    -fx-max-width: 50;
+    -fx-min-height: 50;
+    -fx-max-height: 50;
+
+    -fx-background-radius: 25;
+
+    -fx-content-display: graphic-only;
+
+    -fx-background-color: radial-gradient(radius 180%,darkcyan,slategray);
+
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 5 );
+
+    -fx-graphic: url("../Images/clear.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: contain;
+}
+
+#markClearButton:hover{
+    -fx-background-color: darkcyan;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 10 );
+    -fx-background-radius: 20;
+}
+
+#markClearButton:pressed{
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+    -fx-background-insets: 4 3 2 1;
+    -fx-background-color:darkcyan;
+}
+
+#pageHomework{
+    -fx-font-weight: bold;
+    -fx-font-size: 18;
+    -fx-alignment: center;
+    -fx-font-style: italic;
+    -fx-text-fill: whitesmoke;
+}
+
+
+/*
+
+    main window
+ */
+
+#mainAnchorPane{
+    -fx-background-color:radial-gradient(radius 180%,slategray,black);/* radial-gradient(radius 150%,darkcyan,#03a2ff,dodgerblue,darkcyan,#03a2ff,dodgerblue);*/
+}
+
+#anchorPaneSeparator{
+    -fx-border-color: transparent black transparent transparent;
+    -fx-border-width: 3;
+}
+
+#studentsMainButton{
+
+    -fx-min-height: 93;
+    -fx-max-height: 93;
+    -fx-background-color: inherit;
+    -fx-alignment: bottom-center;
+    -fx-text-fill: whitesmoke;
+    -fx-font-size: 16;
+    -fx-font-weight: bold;
+    -fx-background-image: url("../Images/students.png");
+    -fx-background-position:center 10px;
+    -fx-background-size: 45px 45px;
+    -fx-background-repeat: no-repeat;
+
+    -fx-border-color: radial-gradient(radius 180%,lightgray,gray)  transparent radial-gradient(radius 180%,lightgray,gray) transparent;
+}
+
+#studentsMainButton:hover{
+    -fx-background-color:radial-gradient(radius 300%,slategray,black);
+}
+
+#statMainButton{
+    -fx-max-height: 93;
+    -fx-min-height: 93;
+    -fx-background-color: inherit;
+    -fx-text-fill: whitesmoke;
+    -fx-font-size: 16;
+    -fx-font-weight: bold;
+    -fx-background-image: url("../Images/statistics.png");
+    -fx-background-position:center 11px;
+    -fx-background-size: 45px 45px;
+    -fx-background-repeat: no-repeat;
+    -fx-alignment: bottom-center;
+    -fx-border-color: radial-gradient(radius 180%,lightgray,gray)  transparent radial-gradient(radius 180%,lightgray,gray) transparent;
+}
+
+#statMainButton:hover{
+    -fx-background-color:radial-gradient(radius 300%,slategray,black);
+}
+
+#homeworkMainWindow{
+    -fx-max-height: 93;
+    -fx-min-height: 93;
+    -fx-background-color: inherit;
+    -fx-text-fill: whitesmoke;
+    -fx-font-size: 16;
+    -fx-font-weight: bold;
+
+    -fx-background-image: url("../Images/homeworks.png");
+    -fx-background-position:center 11px;
+    -fx-background-size: 45px 45px;
+    -fx-background-repeat: no-repeat;
+
+
+    -fx-alignment: bottom-center;
+    -fx-border-color: radial-gradient(radius 180%,lightgray,gray)  transparent radial-gradient(radius 180%,lightgray,gray) transparent;
+
+}
+
+#homeworkMainWindow:hover{
+    -fx-background-color:radial-gradient(radius 300%,slategray,black);
+}
+
+#MarksMainWindow{
+    -fx-max-height: 93;
+    -fx-min-height: 93;
+    -fx-background-color: inherit;
+    -fx-text-fill: whitesmoke;
+    -fx-font-size: 16;
+    -fx-font-weight: bold;
+
+    -fx-background-image: url("../Images/marks.png");
+    -fx-background-position:center 11px;
+    -fx-background-size: 45px 45px;
+    -fx-background-repeat: no-repeat;
+
+    -fx-alignment: bottom-center;
+    -fx-border-color: radial-gradient(radius 180%,lightgray,gray)  transparent radial-gradient(radius 180%,lightgray,gray) transparent;
+}
+
+#MarksMainWindow:hover{
+    -fx-background-color:radial-gradient(radius 300%,slategray,black);
+}
+
+#contextMenu {
+    -fx-font-weight: bold;
+    -fx-font-style: italic;
+    -fx-padding: 5 5 5 5;
+}
+
+#labelHomework{
+    -fx-border-color: black;
+    -fx-border-width: 2;
+    -fx-text-fill: black;
+    -fx-border-radius: 25;
+    -fx-font-style: italic;
+    -fx-alignment: center;
+}
+
+#gridPanePopOver{
+    -fx-font-size: 15;
+}
+
+/*
+    Statistics
+*/
+
+
+#tableMarks{
+    -fx-border-color: black;
+    -fx-background-color: inherit;
+
+}
+
+#tableMarks .thumb {
+    -fx-background-color: radial-gradient(radius 180%,black,whitesmoke);
+}
+
+#tableMarks .column-header{
+    -fx-border-color: transparent transparent black transparent;
+    -fx-background-color: whitesmoke;
+    -fx-font-style: italic;
+    -fx-font-weight: bold;
+    -fx-font-size: 16;
+    -fx-alignment: center;
+}
+
+#tableMarks .table-row-cell:selected{
+    -fx-background-color: steelblue;
+}
+
+#customCellMarks{
+    -fx-alignment: center;
+    -fx-font-size: 12;
+    -fx-font-weight: bold;
+}
+
+#piechartMarksLabel{
+    -fx-alignment: center;
+    -fx-font-size: 20;
+}
+
+
+#pieChartMarks{
+    -fx-background-color:inherit;
+    -fx-border-color: black;
+    -fx-font-weight: bold;
+    -fx-text-fill: whitesmoke;
+}
+
+#pieChartMarks .chart-pie-label-line {
+    -fx-fill: whitesmoke;
+    -fx-stroke: whitesmoke;
+}
+
+#pieChartMarks .chart-pie-label{
+    -fx-fill: whitesmoke;
+    -fx-font-weight: bold;
+}
+
+#pieChartMarks .chart-legend{
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+    -fx-font-style: italic;
+}
+
+#pieChartMarks .chart-title {
+    -fx-text-fill: whitesmoke;
+    -fx-font-weight: bold;
+    -fx-font-size: 20;
+}
+
+#barchartMarks{
+    -fx-border-color: black;
+    -fx-background-color: inherit;
+}
+
+
+#barchartMarks .chart-bar{
+    -fx-background-color: radial-gradient(radius 180%,steelblue,steelblue);
+    -fx-border-color: black black transparent black;
+}
+
+#barchartMarks .axis{
+    -fx-tick-label-font-size: 12;
+    -fx-tick-label-font-weight:bold;
+    -fx-tick-label-fill: whitesmoke;
+}
+
+#barchartMarks .chart-title{
+    -fx-text-fill: whitesmoke;
+    -fx-font-weight: bold;
+    -fx-font-size: 20;
+}
+
+#tabPane {
+    -fx-background-color: radial-gradient(radius 380%,slategray,black);
+    -fx-focus-color:transparent;
+    -fx-font-size: 13;
+    -fx-font-weight: bold;
+    -fx-font-style: italic;
+}
+
+#tabPane .tab:selected{
+    -fx-background-color: radial-gradient(radius 380%,slategray,black);
+    -fx-border-color: radial-gradient(radius 180%,slategray,lightgray) radial-gradient(radius 180%,slategray,lightgray) transparent radial-gradient(radius 180%,slategray,lightgray);
+}
+
+#tabPane .tab{
+    -fx-background-color: inherit;
+}
+
+#tabPane .tab-label{
+    -fx-text-fill: whitesmoke;
+    -fx-font-weight: bold;
+    -fx-font-size: 15;
+}
+
+#tabPane .tab-header-background{
+    -fx-background-color:radial-gradient(radius 100%,slategray,lightslategray);
+}
+
+#printButton{
+    -fx-focus-color:transparent;
+}
+
+#promotedLabel{
+    -fx-alignment: center;
+    -fx-font-size: 22;
+    -fx-text-fill: whitesmoke;
+}
+
+#labelMarksStat{
+    -fx-text-fill: whitesmoke;
+}
+
+#labelSavePdf{
+    -fx-alignment: center;
+    -fx-font-size: 19;
+    -fx-font-weight: bold;
+    -fx-text-fill: whitesmoke;
+
+}
+
+#savePdfAnchorPane{
+    -fx-background-color: radial-gradient(radius 380%,slategray,black);
+}
+
+#savePDFCenterAnchorPane{
+    -fx-background-color: radial-gradient(radius 380%,slategray,black) ;
+}
+
+#selectPDFLabel{
+    -fx-alignment: center;
+    -fx-text-fill: whitesmoke;
+    -fx-font-weight: bold;
+    -fx-font-style: italic;
+    -fx-font-size: 17;
+}
+
+#gridPanePDF{
+    -fx-border-color: radial-gradient(radius 180%,lightgray,gray);
+    -fx-border-width: 2;
+}
+
+#comboPDF{
+    -fx-background-color: radial-gradient(radius 180%,lightgray,gray);
+}
+
+#comboPDF .cell{
+    -fx-text-fill: whitesmoke;
+    -fx-alignment: center-left;
+    -fx-font-style: italic;
+    -fx-font-weight: bold;
+    -fx-font-size: 13;
+}
+
+#comboPDF .list-cell{
+    -fx-background-color: radial-gradient(radius 380%,slategray,black);
+}
+
+#comboPDF .list-cell:selected{
+    -fx-background-color:radial-gradient(radius 380%,slategray,black);
+    -fx-border-color-color:radial-gradient(radius 180%,lightgray,gray);
+    -fx-alignment: center;
+    -fx-border-radius: 0;
+}
+
+#comboPDF .list-cell:hover{
+    -fx-background-color:radial-gradient(radius 180%,lightgray,gray) ;
+}
+
+
+#comboPDF .list-view{
+    -fx-background-color: radial-gradient(radius 180%,lightgray,gray);
+}
+
+
+#buttonSavePdf{
+    -fx-background-color: radial-gradient(radius 380%,slategray,black);
+    -fx-border-color:radial-gradient(radius 180%,lightgray,gray) ;
+    -fx-text-fill: whitesmoke;
+    -fx-font-size:13;
+    -fx-font-weight: bold;
+    -fx-font-style: italic;
+    -fx-border-width: 2;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 5 );
+}
+
+#buttonSavePdf:hover{
+    -fx-background-color:radial-gradient(radius 300%,slategray,black);
+}
+
+#buttonSavePdf:pressed{
+    -fx-effect:dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 ) ;
+    -fx-padding: 2 2 2 2 ;
+}
+
+
+#selectPDFLabelButton{
+    -fx-alignment: center;
+
+    -fx-text-fill: whitesmoke;
+    -fx-font-weight: bold;
+    -fx-font-style: italic;
+    -fx-font-size: 15;
+    -fx-border-color: radial-gradient(radius 180%,lightgray,gray) ;
+    -fx-border-width: 2;
+}
+
+#locationPDF{
+    -fx-alignment: center;
+}
+
+#anchorPanePdf{
+    -fx-background-color:radial-gradient(radius 380%,slategray,black) ;
+}
+
+#labelInfoPDF{
+    -fx-text-fill: whitesmoke;
+    -fx-alignment: center;
+}
+
+#PDFLaunch{
+    -fx-background-color: radial-gradient(radius 100%,slategray,lightslategray);
+    -fx-text-fill: whitesmoke;
+    -fx-font-style: italic;
+    -fx-border-color: seashell;
+}
+
+#PDFLaunch:hover{
+    -fx-background-color: radial-gradient(radius 180%,slategray,black);
+}
+
+#PDFLaunch:pressed{
+    -fx-padding: 4 3 2 1;
+}
+
+.dialog-pane{
+    -fx-background-color:radial-gradient(radius 380%,slategray,black);
+    -fx-border-color: black;
+    -fx-border-width: 1;
+}
+
+.dialog-pane:header .header-panel {
+    -fx-background-color:radial-gradient(radius 380%,slategray,black);
+    -fx-font-size: 15;
+}
+
+.dialog-pane:header .header-panel .label{
+    -fx-text-fill: whitesmoke;
+    -fx-font-weight: bold;
+    -fx-alignment: center;
+    -fx-font-style: italic;
+}
+
+.dialog-pane .button {
+    -fx-background-color: whitesmoke;
+    -fx-text-fill: black;
+    -fx-font-style: italic;
+}
+
+.dialog-pane .button:focused{
+    -fx-background-color: lightslategray;
+    -fx-text-fill: whitesmoke;
+    -fx-font-style: italic;
+    -fx-font-weight: bold;
+}
+
+.dialog-pane .button:hover{
+    -fx-background-color: lightslategray;
+    -fx-text-fill: whitesmoke;
+    -fx-font-style: italic;
+    -fx-font-weight: bold;
+}
+

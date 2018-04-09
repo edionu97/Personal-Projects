@@ -1,0 +1,26 @@
+Adaugare nota,199,1.0,10,12,Penalizare depasire deadline Perce
+Adaugare nota,15,1.0,10,12,Penalizare depasire deadline dasd
+Adaugare nota,300,1.0,10,12,Penalizare depasire deadline 
+Adaugare nota,255,1.0,10,12,Penalizare depasire deadline 
+Adaugare nota,20,10.0,14,12,dasdsadhnsajdsahjcdksajdk(no penality)
+Adaugare nota,1145,1.0,10,12,Penalizare depasire deadline dad
+Adaugare nota,420,1.0,2,12,Penalizare depasire deadline 
+Adaugare nota,11,10.0,14,12,dsad(no penality)
+Adaugare nota,10,1.0,10,12,Penalizare depasire deadline dasd
+Adaugare nota,4555,1.0,10,12,Penalizare depasire deadline 
+Adaugare nota,17,10.0,14,12,(no penality)
+Adaugare nota,1441,10.0,14,12,(no penality)
+Adaugare nota,646,1.0,4,12,Penalizare depasire deadline 
+Adaugare nota,555,1.0,10,12,Penalizare depasire deadline 
+Adaugare nota,12,10.0,14,12,Perfecta(no penality)
+Adaugare nota,13,10.0,14,12,Perfecta(no penality)
+Adaugare nota,14,10.0,14,12,Perfecta(no penality)
+Adaugare nota,16,10.0,14,12,Perfecta(no penality)
+Adaugare nota,21,10.0,14,12,Perfecta(no penality)
+Adaugare nota,454521,1.0,10,12,Penalizare depasire deadline Da
+Adaugare nota,4545,10.0,14,12,(no penality)
+Adaugare nota,2,4.0,14,13,DA(no penality)
+Modificare nota,2,10.0,14,13,Perfecta(no penalty)
+Adaugare nota,18,10.0,13,12,Perfecta(no penality)
+Adaugare nota,25,10.0,14,13,perfecta(no penality)
+Adaugare nota,3,10.0,14,13,(no penality)

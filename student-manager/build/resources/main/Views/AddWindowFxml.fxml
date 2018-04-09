@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane prefHeight="400.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="User.FXML.Controlers.AddWindowFxmlController">
+   <children>
+      <BorderPane layoutX="-1.0" layoutY="1.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <Label id="addLable" alignment="CENTER" prefHeight="67.0" prefWidth="595.0" text="Add a student into database" BorderPane.alignment="CENTER" />
+         </top>
+         <right>
+            <GridPane hgap="4.0" prefHeight="292.0" prefWidth="600.0" vgap="12.0" BorderPane.alignment="CENTER_LEFT">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.0" minWidth="10.0" prefWidth="132.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="484.0" minWidth="10.0" prefWidth="304.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="119.0" minHeight="10.0" prefHeight="64.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="146.0" minHeight="10.0" prefHeight="62.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="200.0" minHeight="10.0" prefHeight="64.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="200.0" minHeight="10.0" prefHeight="69.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="200.0" minHeight="10.0" prefHeight="70.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <BorderPane.margin>
+                  <Insets right="60.0" />
+               </BorderPane.margin>
+               <children>
+                  <Label id="fieldLable" fx:id="labelName" alignment="CENTER_RIGHT" prefHeight="39.0" prefWidth="141.0" text="Name " GridPane.rowIndex="1" />
+                  <Label id="fieldLable" fx:id="labelEmail" alignment="CENTER_RIGHT" prefHeight="52.0" prefWidth="139.0" text="Email " GridPane.rowIndex="2" />
+                  <Label id="fieldLable" fx:id="labelStudentId" alignment="CENTER_RIGHT" prefHeight="52.0" prefWidth="139.0" text="Student ID " />
+                  <Label id="fieldLable" fx:id="lableTeacher" alignment="CENTER_RIGHT" prefHeight="52.0" prefWidth="139.0" text="Teacher " GridPane.rowIndex="3" />
+                  <Label id="fieldLable" fx:id="labelGroup" alignment="CENTER_RIGHT" maxHeight="52.0" maxWidth="139.0" prefHeight="52.0" prefWidth="139.0" text="Group " GridPane.rowIndex="4" />
+                  <TextField id="textField" fx:id="textFieldId" alignment="CENTER" prefHeight="34.0" prefWidth="315.0" GridPane.columnIndex="1" />
+                  <TextField id="textField" fx:id="textFieldName" alignment="CENTER" prefHeight="34.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextField id="textField" fx:id="textFieldEmail" alignment="CENTER" prefHeight="34.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <TextField id="textField" fx:id="textFieldTeacher" alignment="CENTER" prefHeight="34.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <TextField id="textField" fx:id="textFieldGroup" alignment="CENTER" prefHeight="34.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="25.0" right="100.0" top="20.0" />
+               </padding>
+            </GridPane>
+         </right>
+         <bottom>
+            <HBox alignment="CENTER_RIGHT" prefHeight="58.0" prefWidth="700.0" spacing="10.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button id="cancelButton" fx:id="buttonCancel" mnemonicParsing="false" onAction="#handleCancelEvent" prefHeight="41.0" prefWidth="113.0" text="Cancel">
+                     <tooltip>
+                        <Tooltip text="Press this buton to cancel the operation" />
+                     </tooltip></Button>
+                  <Button id="addButton1" fx:id="buttonSave" mnemonicParsing="false" onAction="#handleSaveEvent" prefHeight="41.0" prefWidth="113.0" text="Save">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                     <tooltip>
+                        <Tooltip id="tooltipSave" text="Press this button to save the student into database" />
+                     </tooltip>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets left="150.0" top="5.0" />
+               </padding>
+            </HBox>
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,4 @@
+Adaugare nota,1,10.0,14,13,Perfecta(no penality)
+Adaugare nota,2,10.0,14,13,Asa Ceva(no penality)
+Adaugare nota,5,10.0,14,13,da(no penality)
+Adaugare nota,4,1.0,10,13,Penalizare depasire deadline da

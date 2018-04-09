@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Repositories type="SQL">
+    <Student_Repository fileName="Students.txt" package="Repository." repoName="MSSQLStudentRepository"/>
+    <Homework_Repository fileName="Tema.txt" package="Repository." repoName="MSSQLTemaRepository"/>
+    <Marks_Repository fileName="Catalog.txt" package="Repository." repoName="MSSQLNotaRepository"/>
+</Repositories>

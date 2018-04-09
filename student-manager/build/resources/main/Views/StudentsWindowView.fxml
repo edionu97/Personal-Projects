@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="background" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="User.FXML.Controlers.StudentsWindowController">
+   <children>
+      <VBox layoutX="3.0" layoutY="5.0" prefHeight="600.0" prefWidth="800.0" spacing="10.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane id="fontLabel" maxHeight="93.0" minHeight="93.0" prefHeight="93.0" prefWidth="809.0">
+               <children>
+                  <Label id="studentWindowTitle" fx:id="studentTitle" alignment="CENTER" layoutX="170.0" layoutY="18.0" opacity="0.88" prefHeight="58.0" prefWidth="545.0" text="Student information" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font name="System Italic" size="40.0" />
+                     </font>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets left="-7.0" right="-2.0" top="-5.0" />
+               </VBox.margin>
+            </AnchorPane>
+            <BorderPane prefHeight="469.0" prefWidth="800.0">
+               <center>
+                  <AnchorPane id="tableAnchorPaneMain" maxWidth="800.0" prefHeight="573.0" prefWidth="794.0">
+                     <children>
+                        <AnchorPane layoutX="17.0" layoutY="17.0" prefHeight="59.0" prefWidth="781.0" AnchorPane.bottomAnchor="407.0" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="14.0">
+                           <children>
+                              <HBox layoutX="28.0" layoutY="8.0" prefHeight="35.0" prefWidth="271.0" spacing="20.0">
+                                 <children>
+                                    <Button fx:id="butonStudentList" mnemonicParsing="false" onAction="#handleListStudent" prefHeight="25.0" prefWidth="107.0" styleClass="customStyle1" text="Student List" />
+                                    <Button fx:id="butonAddStudent" mnemonicParsing="false" onAction="#handleAddStudent" prefHeight="25.0" prefWidth="133.0" styleClass="customStyle2" text="Add Student" />
+                                 </children>
+                                 <padding>
+                                    <Insets left="10.0" top="10.0" />
+                                 </padding>
+                              </HBox>
+                              <Line id="line" endX="378.0" layoutX="400.0" layoutY="43.0" startX="-102.0" AnchorPane.bottomAnchor="15.0" AnchorPane.topAnchor="44.0" />
+                              <Line id="line" layoutX="28.0" layoutY="20.0" startX="-38.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="44.0" />
+                              <Line id="line" endX="50.0" layoutX="115.0" layoutY="44.0" startX="29.5" AnchorPane.bottomAnchor="15.0" AnchorPane.topAnchor="44.0" />
+                              <ComboBox fx:id="comboBox" layoutX="663.0" layoutY="13.0" onAction="#handleComboAction" prefHeight="25.0" prefWidth="57.0" promptText="8" styleClass="comboBox" AnchorPane.bottomAnchor="36.0" AnchorPane.rightAnchor="65.0" AnchorPane.topAnchor="0.0" />
+                              <Label fx:id="lableShow" alignment="CENTER_RIGHT" layoutX="581.0" layoutY="9.0" prefHeight="25.0" prefWidth="62.0" text="Show :" AnchorPane.rightAnchor="122.0" AnchorPane.topAnchor="1.0">
+                                 <effect>
+                                    <DropShadow>
+                                       <input>
+                                          <Bloom />
+                                       </input>
+                                    </DropShadow>
+                                 </effect>
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="lableEntities" layoutX="714.0" layoutY="5.0" prefHeight="25.0" prefWidth="60.0" text="entities" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="1.0">
+                                 <effect>
+                                    <DropShadow />
+                                 </effect>
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <TextField id="searchField" fx:id="textFieldSearch" layoutX="311.0" layoutY="13.0" prefHeight="25.0" prefWidth="268.0" promptText="Type here..." AnchorPane.bottomAnchor="17.0">
+                                 <font>
+                                    <Font name="System Bold Italic" size="12.0" />
+                                 </font></TextField>
+                           </children>
+                        </AnchorPane>
+                        <Line id="line" endX="678.0" layoutX="375.0" layoutY="466.0" startX="-100.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="465.0" />
+                        <Line id="line" endY="407.0" layoutX="8.0" layoutY="61.0" AnchorPane.bottomAnchor="15.5" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="785.5" AnchorPane.topAnchor="58.0" />
+                        <Line id="line" endX="5.0" endY="406.0" layoutX="782.0" layoutY="59.0" startX="5.0" AnchorPane.bottomAnchor="16.0" AnchorPane.leftAnchor="786.0" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="58.0" />
+                        <Button id="nextButton" fx:id="buttonNext" layoutX="727.0" layoutY="440.0" mnemonicParsing="false" onAction="#handleNextEvent" style="-fx-background-color: transparent;" text="next" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="19.0" AnchorPane.topAnchor="437.0" />
+                        <Label id="label" fx:id="labelPageNr" alignment="CENTER" layoutX="691.0" layoutY="441.0" maxHeight="25.0" maxWidth="38.0" minHeight="25.0" minWidth="38.0" prefHeight="25.0" prefWidth="38.0" text="0" AnchorPane.bottomAnchor="19.0" AnchorPane.rightAnchor="61.0" AnchorPane.topAnchor="438.0" />
+                        <Button id="prevButton" fx:id="buttonPrev" layoutX="639.0" layoutY="437.0" mnemonicParsing="false" onAction="#handlePrevEvent" prefHeight="25.0" prefWidth="50.0" style="-fx-background-color: transparent;" text="prev" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="650.0" AnchorPane.topAnchor="437.0" />
+                        <Label id="pageLabel" fx:id="labelInfo" layoutX="24.0" layoutY="441.0" prefHeight="26.0" prefWidth="426.0" text="Label" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="24.0" AnchorPane.rightAnchor="344.0" AnchorPane.topAnchor="437.0" />
+                        <BorderPane fx:id="borderPane" layoutX="7.0" layoutY="61.0" prefHeight="372.0" prefWidth="779.0" AnchorPane.bottomAnchor="44.0" AnchorPane.topAnchor="65.0">
+                           <center>
+                              <TableView id="table" fx:id="tableViewStudents" prefHeight="367.0" prefWidth="769.0">
+                                <columns>
+                                  <TableColumn id="customCell" fx:id="tableColumnId" prefWidth="75.0" resizable="false" style="-fx-backgroung: white;" text="Id" />
+                                  <TableColumn id="customCell" fx:id="tableColumnNume" prefWidth="70.0" resizable="false" text="Name" />
+                                    <TableColumn id="customCell" fx:id="tableColumnEmail" prefWidth="97.0" resizable="false" text="Email" />
+                                    <TableColumn id="customCell" fx:id="tableColumnTeacher" prefWidth="86.0" resizable="false" text="Teacher" />
+                                    <TableColumn id="customCell" fx:id="tableColumnGroup" prefWidth="75.0" resizable="false" text="Group" />
+                                    <TableColumn id="actionCell" fx:id="tableColumnAction" prefWidth="100.0" resizable="false" text="Action" />
+                                </columns>
+                                 <BorderPane.margin>
+                                    <Insets left="-4.0" right="-7.0" />
+                                 </BorderPane.margin>
+                              </TableView>
+                           </center>
+                           <padding>
+                              <Insets left="8.0" right="8.0" />
+                           </padding>
+                        </BorderPane>
+                     </children>
+                     <BorderPane.margin>
+                        <Insets left="-6.0" />
+                     </BorderPane.margin>
+                  </AnchorPane>
+               </center>
+               <padding>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </padding>
+            </BorderPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

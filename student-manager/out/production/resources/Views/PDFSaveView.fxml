@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane maxHeight="200.0" maxWidth="300.0" minHeight="250.0" minWidth="300.0" prefHeight="200.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="User.FXML.Controlers.PDFSaveController">
+   <children>
+      <BorderPane layoutX="100.0" layoutY="14.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <AnchorPane id="savePdfAnchorPane" prefHeight="32.0" prefWidth="291.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label id="labelSavePdf" fx:id="iconPDF" prefHeight="32.0" prefWidth="300.0" text="Save PDF" AnchorPane.rightAnchor="100.0" />
+               </children>
+            </AnchorPane>
+         </top>
+         <center>
+            <AnchorPane id="savePDFCenterAnchorPane" minHeight="0.0" minWidth="200.0" prefHeight="200.0" prefWidth="365.0" BorderPane.alignment="CENTER">
+               <children>
+                  <GridPane id="gridPanePDF" layoutX="63.0" layoutY="46.0" maxWidth="275.0" minWidth="181.0" prefHeight="111.0" prefWidth="275.0" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="25.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="135.0" minWidth="10.0" prefWidth="135.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="137.0" minWidth="10.0" prefWidth="137.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label id="selectPDFLabel" prefHeight="55.0" prefWidth="135.0" text="Select page size" GridPane.rowIndex="1" />
+                        <Label id="selectPDFLabel" prefHeight="42.0" prefWidth="135.0" text="Select title size" GridPane.rowIndex="2">
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin></Label>
+                        <Label id="selectPDFLabel" layoutX="10.0" layoutY="10.0" prefHeight="46.0" prefWidth="135.0" text="Select font size" />
+                        <ComboBox id="comboPDF" fx:id="comboBoxFontSize" prefWidth="150.0" GridPane.columnIndex="1">
+                           <GridPane.margin>
+                              <Insets left="5.0" right="5.0" />
+                           </GridPane.margin>
+                        </ComboBox>
+                        <ComboBox id="comboPDF" fx:id="comboBoxFontPageSize" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets left="5.0" right="5.0" />
+                           </GridPane.margin>
+                        </ComboBox>
+                        <ComboBox id="comboPDF" fx:id="comboBoxFontTitleSize" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <GridPane.margin>
+                              <Insets left="5.0" right="5.0" />
+                           </GridPane.margin>
+                        </ComboBox>
+                     </children>
+                  </GridPane>
+                  <Button id="buttonSavePdf" fx:id="buttonBrowse" layoutX="153.0" layoutY="147.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="126.0" text="Browse location ..." AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="70.0" AnchorPane.rightAnchor="160.0" />
+                  <Button id="buttonSavePdf" fx:id="buttonPdfSave" layoutX="245.0" layoutY="180.0" mnemonicParsing="false" text="Save" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="104.0" />
+                  <Button id="buttonSavePdf" fx:id="buttonPdfCancel" layoutX="14.0" layoutY="190.0" mnemonicParsing="false" text="Close" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="4.0" />
+                  <Label id="locationPDF" fx:id="labelPDF" layoutX="139.0" layoutY="143.0" prefHeight="27.0" prefWidth="299.0" text="Label" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="101.0" />
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

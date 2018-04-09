@@ -1,0 +1,2 @@
+Adaugare nota,21,10.0,14,12,dasdas(no penality)
+Adaugare nota,25,10.0,14,13,Perfecta(no penality)

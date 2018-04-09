@@ -1,0 +1,36 @@
+<html>
+
+    <head>
+
+        <style>
+
+             h1{
+                font-size:200%;
+                font-style:italic;
+                text-align:center;
+             }
+
+             p{
+               font-size:150%;
+               font-style:italic;
+             }
+
+             h2{
+                text-decoration:underline;
+                text-align:left;
+                font-size:150%;
+             }
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <h1>Student information</h1>
+        <p><strong>?</strong>,this is an informative message,showing information about your lab marks,and lab updates.</p>
+        <h2> Message content </h2>
+        <p align="center" style="font-size:150%;font-style:italic;">?</p>
+
+    </body>
+</html>

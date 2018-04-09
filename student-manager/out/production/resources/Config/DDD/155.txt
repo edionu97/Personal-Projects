@@ -1,0 +1,2 @@
+Adaugare nota,2,10.0,14,1,(no penality)
+Adaugare nota,3,10.0,14,14,incompleta(no penality)

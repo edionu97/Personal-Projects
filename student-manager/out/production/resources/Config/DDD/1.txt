@@ -1,0 +1,10 @@
+Adaugare nota,20,10.0,14,13,Perfecta(no penality)
+Adaugare nota,10,1.0,10,13,Penalizare depasire deadline Da
+Adaugare nota,11,10.0,14,13,add(no penality)
+Adaugare nota,8,10.0,14,13,ana(no penality)
+Adaugare nota,12,10.0,14,13,da(no penality)
+Adaugare nota,9,10.0,14,13,Da(no penality)
+Adaugare nota,182,1.0,10,13,Penalizare depasire deadline 
+Adaugare nota,3,5.0,14,13,Paritial(no penality)
+Modificare nota,3,10.0,14,13,(no penalty)
+Adaugare nota,4545,10.0,14,13,PErfecta(no penality)
