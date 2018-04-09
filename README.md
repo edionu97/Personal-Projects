@@ -9,9 +9,9 @@ Also the statistics are exportend into **PDF**,using **ITEXT**,and for not slowi
 
 The **HTML** mail format is this:
 
-<html>
-    <head>
-        <style>
+html
+    head
+        style
              hh1{
                 font-size:200%;
                 font-style:italic;
@@ -26,15 +26,15 @@ The **HTML** mail format is this:
                 text-align:left;
                 font-size:150%;
              }
-        </style>
-    </head>
-    <body>
-        <hh1>Student information</h1>
-        <p><strong>?</strong>,this is an informative message,showing information about your lab marks,and lab updates.</p>
-        <hh2> Message content </h2>
+        /style>
+    /head
+    body
+       hh1Student information</h1>
+        p<strong>?</strong>,this is an informative message,showing information about your lab marks,and lab updates.</p>
+        hh2 Message content </h2>
         <p align="center" style="font-size:150%;font-style:italic;">?</p>
-    </body>
-</html>
+    /body
+/html
 
 
 Question marks are used in the application for giving relevant information to each student.
