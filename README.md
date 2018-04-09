@@ -12,7 +12,7 @@ The **HTML** mail format can be found in src -> main ->resources ->email ->html.
 ## Creating database
 
 ### Creating functions
- This functions are used in data pagination:
+ These functions are used in data pagination:
 
  CREATE FUNCTION [dbo].[paginateNota](@pageNumber INT,@pageElements INT) RETURNS @table TABLE (
 
