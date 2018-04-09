@@ -7,37 +7,7 @@ Has a **XML** configuration file,in which the repository type can be specified.T
 For parsing the XML file,**DOM-parser** is used.
 Also the statistics are exportend into **PDF**,using **ITEXT**,and for not slowing down the application this task + (**email sending**) is runned on another process(thread).
 
-The **HTML** mail format is this:
-
-html
-    head
-        style
-             hh1{
-                font-size:200%;
-                font-style:italic;
-                text-align:center;
-             }
-             p{
-               font-size:150%;
-               font-style:italic;
-             }
-             hh2{
-                text-decoration:underline;
-                text-align:left;
-                font-size:150%;
-             }
-        /style>
-    /head
-    body
-       hh1Student information</h1>
-        p<strong>?</strong>,this is an informative message,showing information about your lab marks,and lab updates.</p>
-        hh2 Message content </h2>
-        <p align="center" style="font-size:150%;font-style:italic;">?</p>
-    /body
-/html
-
-
-Question marks are used in the application for giving relevant information to each student.
+The **HTML** mail format can be found in src -> main ->resources ->email ->html.txt.
 
 ## Creating database
 
